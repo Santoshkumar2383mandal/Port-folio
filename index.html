@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port-folio</title>
+    <title>Simple Navbar</title>
+    <style>
+        /* Basic styling for the navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333; /* Background color of the navbar */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white; /* Text color */
+            text-align: center;
+            padding: 14px 20px; /* Padding inside each link */
+            text-decoration: none; /* Remove underline */
+        }
+        .navbar a:hover {
+            background-color: #ddd; /* Change background color on hover */
+            color: black; /* Change text color on hover */
+        }
+        .navbar a.active {
+            background-color: #04AA6D; /* Active link background color */
+            color: white; /* Active link text color */
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div style="padding:16px">
+        <h1>Welcome to the Homepage</h1>
+        <p>This is a simple webpage with a navigation bar at the top.</p>
+    </div>
+
 </body>
 </html>
