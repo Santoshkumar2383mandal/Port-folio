@@ -3,61 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Santosh Ku</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="wrapper">
+        <div class="container">
 
-    <section id="home" class="hero">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>Frontend Developer | Designer | Programmer</p>
-    </section>
+            <div class="navbar">
+                
+                <div class="logo-container" id="home">
+                    <img src="./images/userAsset/NavLogo.jpg" class="logo">
+                    <div class="logo-text">ortfoLio.</div>
+                </div>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer with a love for creating beautiful and functional websites. My journey started with [Your Background Info].</p>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 3</h3>
-                <p>Description of Project 3</p>
-            </div>
-            <div class="project-item">
-                <h3>Project 4</h3>
-                <p>Description of Project 4</p>
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skill">Skill</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>If you would like to get in touch, please reach out via email or connect on LinkedIn.</p>
-        <a href="mailto:your-email@example.com" class="btn">Email Me</a>
-    </section>
+        <div class="hero-section">
 
-    <footer>
-        <p>© [Your Name] - All Rights Reserved</p>
-    </footer>
+            <div class="hero-section-left">
+                <div class="faded-text">Santosh</div>
+                <div class="hero-section-heading">Hi! My Name is <br> <div class="name">Santosh Kumar Mandal</div></div>
+                
+                <div class=" hero-section-heading hero-section-sub-heading">
+                    I am a <span class="role"></span>
+                </div>
+
+                <div class="hero-section-description">
+                    I’m a Aspiring Software Developer and here is my portfolio website. Here you’ll
+                    learn about my journey.
+                </div>
+                <div class="btn-pink" id="btn">Hire me</div>
+            </div>
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="./images/userAsset/dots.png" alt="" />
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="./images/userAsset/cube.png" alt="" />
+                </div>
+                <div class="absolute icons icon-circle">
+                    <img src="./images/userAsset/circle.png" alt="" />
+                </div>
+                <div class="absolute icons icon-zigzag">
+                    <img src="./images/userAsset/zigzags.png" alt="" />
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="./images/userAsset/plus.png" alt="" />
+                </div>
+                <div class="user-image">
+                    <img src="./images/userAsset/sonu.jpg" alt="" />
+                </div>
+            </div>
+            
+        </div>  
+    </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Coder",
+        "Software Developer",
+        "Full Stack Developer",
+        "Web Developer",
+        "UI-UX Designer",
+        "Backend Developer",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
 </body>
 </html>
